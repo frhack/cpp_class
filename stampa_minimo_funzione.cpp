@@ -6,12 +6,10 @@
 #include <iostream>
 using namespace std;
 
-// Funzione che trova l'indice del minimo in un array
-// a partire dalla posizione 'inizio' fino alla fine
-int indice_minimo(int arr[], int n, int inizio) {
-    int pos_min = inizio;
+int indice_minimo(int arr[], int n) {
+    int pos_min = 0;
 
-    for(int j = inizio + 1; j < n; j++) {
+    for(int j = 0 + 1; j < n; j++) {
         if(arr[j] < arr[pos_min]) {
             pos_min = j;
         }
@@ -32,7 +30,7 @@ int main() {
     cout << endl;
 
     // Trova l'indice del minimo (partendo dalla posizione 0)
-    int pos_min = indice_minimo(arr, n, 0);
+    int pos_min = indice_minimo(arr,n);
 
     // Stampa il risultato
     cout << "Il minimo e' " << arr[pos_min] << endl;
