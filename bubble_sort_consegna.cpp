@@ -1,7 +1,7 @@
 /*
  * Questo programma ordina un array di numeri interi con l'algoritmo bubble sort
- * usare le seguenti funzioni: chiediNumeri, stampaNumeri, scambia
- * Completare il main con il codice per ordinare l'array con bubble sort
+ * usare le seguenti funzioni: chiediNumeri, stampaNumeri, scambia, passata (da completare)
+ * Completare la funzione passata e il main
  */
 
 
@@ -29,6 +29,13 @@ void scambia(int & a, int & b) {
     b = t;
 }
 
+//la funzione passata fa una passata dell'array e sposta il massimo verso destra
+//suggerimento: usare un ciclo for con j da 0 a fine-1
+//confrontare arr[j] con arr[j+1] e scambiare se arr[j] > arr[j+1]
+void passata(int arr[], int fine) {
+    //completare la funzione
+}
+
 int main() {
     int arr[10];
     const int n = 10;
@@ -43,9 +50,8 @@ int main() {
     //stampaNumeri(arr,n);
 
     //ordina l'array con bubble sort: inserire qui il codice
-    //suggerimento: usare due cicli for annidati
-    //nel ciclo interno confrontare arr[j] con arr[j+1]
-    //e scambiare se arr[j] > arr[j+1]
+    //suggerimento: scrivere una funzione per il passo (passata)
+    //che fa una singola passata dell'array, poi chiamarla ripetutamente nel main
 
 
     // Stampa dell'array dopo l'ordinamento
