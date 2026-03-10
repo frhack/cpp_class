@@ -29,10 +29,10 @@ void scambia(int & a, int & b) {
     b = t;
 }
 
-//la funzione passata fa una passata dell'array e sposta il massimo verso destra
-//suggerimento: usare un ciclo for con j da 0 a fine-1
-//confrontare arr[j] con arr[j+1] e scambiare se arr[j] > arr[j+1]
-void passata(int arr[], int fine) {
+//la funzione passata fa una passata dell'array e sposta il minimo verso sinistra
+//suggerimento: usare un ciclo for con j che parte da fine e scende fino a inizio+1
+//confrontare arr[j] con arr[j-1] e scambiare se arr[j] < arr[j-1]
+void passata(int arr[], int inizio, int fine) {
     //completare la funzione
 }
 
